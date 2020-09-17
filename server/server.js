@@ -26,7 +26,7 @@ mongoose.connect(process.env.URLDB, {useNewUrlParser: true, useUnifiedTopology: 
 });
 
 // Inicializacion del server
-app.listen(3000, () => {
-  console.log('Servidor corriendo en el puerto', 3000);
+app.listen(process.env.PORT, () => {
+  console.log('Servidor corriendo en el puerto', process.env.PORT);
 });
 
